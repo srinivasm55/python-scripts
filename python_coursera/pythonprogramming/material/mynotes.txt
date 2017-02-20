@@ -6,3 +6,7 @@ print(both)
 ##############  end='' starts printing without new line
 print("The Fahrenheit temperature",temp,"is equivalent to",newTemp,end='')
 print(" degrees Celsius")
+
+
+#############    type_ takes string type
+def area(type_, x):
