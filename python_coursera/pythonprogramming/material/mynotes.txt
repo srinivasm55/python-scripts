@@ -10,3 +10,6 @@ print(" degrees Celsius")
 
 #############    type_ takes string type
 def area(type_, x):
+
+#############     is digit validation for string input
+if temp_str.isdigit():  
