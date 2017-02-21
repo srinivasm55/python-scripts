@@ -118,15 +118,14 @@ Solution:
 """
 #%%
 def celsius_to_fahrenheit(temp):
-
-
-
-
-
+    newTemp = (9/5)*(temp)+32
+    print("The Celsius temperature",temp,"is equivalent to",newTemp,end='')
+    print("degrees Fahrenheit")
+    
 #%%
-"""
-End solution
-"""
+    """
+        End solution
+    """
 #%%
 
 def name():
@@ -166,14 +165,13 @@ def name():
         Also, input the city and state and print."""
     fname = input("Enter your first name: ")
     lname = input("Enter your last name: ")
+    city = input("Enter the city you live in: ")
+    state = input("Enter the state you live in: ")
     fullname = fname + " " + lname
-    
-
-
-
+    address = city + ", " + state
 
     print("Your name is:", fullname)
-
+    print("You live in:", address)
 
 #%%
 """
@@ -256,10 +254,10 @@ Solution:
 """
 #%%
 def absolutevalue(num):
-
-
-
-
+    if num > 0:
+        print("The absolute value of",num,"is",num)
+    else:
+        print("The absolute value of",num,"is",-num)
 
 #%%
 """
@@ -359,10 +357,9 @@ Solution:
 #%%
 
 def inches_to_feet2(inches):
-
-
-
-
+    feet = inches//12
+    extra_inches = inches%12
+    print(inches,"inches is",feet,"feet and",extra_inches,"inches") 
 
 #%%
 """
@@ -396,13 +393,12 @@ all the numbers on the same line or different lines. Use a while loop.
 Solution:
 """
 #%%
-
-
-
-
-
-
-
+def countdown():
+    ct = 10
+    while ct > 0:
+        print(ct,end=" ")
+        ct = ct - 1
+    print("BLASTOFF!")    
 
 #%%
 """
@@ -435,8 +431,10 @@ Solution:
 """
 #%%
 def countdown1():
-
-
+    for ct in range(10,0,-1):
+        print(ct,end=' ')
+        
+    print("BLASTOFF!")
 
 
 #%%
@@ -461,12 +459,9 @@ def favorite():
 """
 My solution:
 """
-
-
-
-
-
-
+def favorite():
+    my_toy = input("What is my favorite toy? ")
+    print("Your favorite toy is", my_toy)
 
 #%%
 """
