@@ -273,7 +273,7 @@ def problem1_7():
                             b2 = float(b2_str)
                             h = float(h_str)
                             A = (.5)*(b1+b2)*h
-                            print("The area of a trapezoid with bases",end="")
+                            print("The area of a trapezoid with bases",end=" ")
                             print(b1,"and",b2,"and height",h,"is",A)    
                         else:
                             print("You must enter a number. Bye")    
