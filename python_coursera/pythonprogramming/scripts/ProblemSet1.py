@@ -260,31 +260,28 @@ The area of a trapezoid with bases 3.0 and 4.0 and height 8.0 is 28.0
 """  
 #%%
 def problem1_7():
-    b1_str = input("Enter the length of one of the bases: ")
-    if b1_str.isdigit():
-        b1 = float(b1_str)
-    else:
-        print("You must enter a number. Bye")   
+    b1_str = input("Enter the length of one of the bases: ")    
+    if b1_str:
+        if b1_str.isdigit():
+            b2_str = input("Enter the length of the other base: ")
+            if b2_str:
+                if b2_str.isdigit():
+                    h_str = input("Enter the height: ")
+                    if h_str:        
+                        if h_str.isdigit():
+                            b1 = float(b1_str)
+                            b2 = float(b2_str)
+                            h = float(h_str)
+                            A = (.5)*(b1+b2)*h
+                            print("The area of a trapezoid with bases",end="")
+                            print(b1,"and",b2,"and height",h,"is",A)    
+                        else:
+                            print("You must enter a number. Bye")    
+                else:
+                        print("You must enter a number. Bye")
+        else:
+            print("You must enter a number. Bye")   
         
-    b2_str = input("Enter the length of the other base: ")
-    if b2_str.isdigit():
-        b2 = float(b2_str)
-    else:
-        print("You must enter a number. Bye")
-        
-    h_str = input("Enter the height: ")
-    if h_str.isdigit():
-        h = float(h_str)
-    else:
-        print("You must enter a number. Bye")    
-        
-    A = (.5)*(b1+b2)*h
-    print("The area of a trapezoid with bases",b1,"and",b2,"and height",end="")
-    print(h,"is",A)    
-
-
-
-
 
 #%%
 """
