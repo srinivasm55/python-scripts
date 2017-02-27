@@ -107,11 +107,13 @@ Solution:
 """
 #%%
 def average(numlis):
-
-
-
-
-
+    sum_ = 0
+    ct = 0
+    for x in numlis:
+        sum_ = sum_ + x
+        ct = ct + 1
+        
+    print(sum_/ct)
 
 #%%
 """
@@ -147,13 +149,15 @@ function should pass all three tests below.
 #%% 
 letter_list = ['a', 'b', 'c']
 cap_list = ['A', 'B', 'C', 'D']
-misc_list) = ['ball', 3.14, -50, 'university', "course"]
+misc_list = ['ball', 3.14, -50, 'university', "course"]
 #%%
 """
 Solution:
 """
 #%%
-
+def print_list(lis):
+    for x in lis:
+        print(x)
 
 
 #%%
@@ -231,7 +235,7 @@ def         for     lambda  try
 You'll just get a syntax error:
 """ 
 #%%
-except = 5
+except_ = 5
 #%%
 """
 Note: for readability, if you feel that you need to use one of these as a 
@@ -271,12 +275,10 @@ What is the population of the state in the second element?
 Solution:
 """
 #%%
-
-
-
-
-
-
+print(newEngland[0])
+print(newEngland[1])
+print(newEngland[1][0])
+print(newEngland[1][1])
 
 #%%
 """
@@ -380,35 +382,14 @@ Solution Starter:
 """
 #%%
 def average(nlis):
-    pass  # delete this and enter your code starting here
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    sum_ = 0
+    ct = 0
+    for i in range(0,len(nlis)):
+        x = nlis[i]
+        print(x,end=" ")
+        sum_ = sum_ + x
+        ct = ct + 1
+    print("the average is",sum_/ct)    
 
 #%%
 """
@@ -488,19 +469,6 @@ def simple_poem():
     our_sentence = our_sentence.capitalize()
     
     print(our_sentence)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
 #%%
 """
@@ -583,16 +551,15 @@ You've ordered:
 Solution:
 """
 #%%
-
-
-
-
-
-
-
-
-
-
-
+def diner_waitress():
+    order = []
+    print("Hello, I'll be your waitress. What will you have?")
+    while True:
+        nextitem = input("menu item:")
+        if nextitem == 'that\'s all':
+            break
+        order.append(nextitem)
+    print("You've ordered: ")
+    print (order) 
 
 #%%

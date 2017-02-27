@@ -25,13 +25,11 @@ does all of the following, each on a separate line:
 """  
 #%%      
 def problem2_1():
-    pass # replace this pass (a do-nothing) statement with your code
-
-
-
-
-
-
+    lis = list(range(20,30))
+    print(lis[3])
+    print(lis)
+    for x in range(0,len(lis)):
+        print(lis[x],end = " ")
 
 #%%
 """
@@ -67,17 +65,15 @@ alist = ["a","e","i","o","u","y"]
 blist = ["alpha", "beta", "gamma", "delta", "epsilon", "eta", "theta"] 
 
 def problem2_2(my_list):
-    pass # replace this pass (a do-nothing) statement with your code
-
-
-
-
-
-
-
-
-
-
+    print(my_list)
+    print(my_list[0])
+    print(my_list[-1])
+    print(my_list[3:5])
+    print(my_list[:3])
+    print(my_list[3:])
+    print(len(my_list))
+    my_list.append("z")
+    print(my_list)
 
 #%%
 """
@@ -128,7 +124,9 @@ newEngland = ["Maine","New Hampshire","Vermont", "Rhode Island",
 "Massachusetts","Connecticut"]
 
 def problem2_3(ne):
-    pass # replace this pass (a do-nothing) statement with your code
+    for x in ne:
+        print(x,"has",len(x),"letters")
+    
 
     
 #%%
@@ -148,8 +146,8 @@ import random
 
 def problem2_4():
     """ Make a list of 10 random reals between 30 and 35 """
-    random.seed()
-    pass # replace this pass (a do-nothing) statement with your code
+    random.seed(10)
+    print(random.random())
 
 #%%
 """
@@ -306,7 +304,17 @@ hourly_temp = [40.0, 39.0, 37.0, 34.0, 33.0, 34.0, 36.0, 37.0, 38.0, 39.0, \
                36.0, 35.0, 33.0, 32.0]
 #%%
 def problem2_8(temp_list):
-    pass # replace this pass (a do-nothing) statement with your code
+    high,low,sum_,ct = max(temp_list),min(temp_list),0,len(temp_list)
+    #high,low,sum_,ct = temp_list[0],temp_list[0],0,len(temp_list)
+    for x in temp_list:
+        sum_ = sum_ + x
+     #   if (x > high):
+      #      high = x
+       # if (x < low):
+        #    low = x
+    print("Average:",sum_/ct) 
+    print("High:",high)
+    print("Low:",low)
         
     
 #%%
