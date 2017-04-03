@@ -1,0 +1,20 @@
+
+
+from __future__ import division
+
+S3 L13:
+	a = 4E2(4 times 10 power 2) => 400
+
+Indexing
+Slicing
+Unpacking tuple
+Formatting
+List comprehension
+
+
+A quick note for Python 3 users for the Map, Reduce, and
+Filter functions. These functions return iterators in Python 3 
+instead of lists (as in Python 2). To get a list for any of
+these functions in Python 3, you can just cast it as a list 
+using list() around the function.
+Also in Python 3, reduce is imported from functools.
